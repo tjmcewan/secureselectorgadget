@@ -40,9 +40,9 @@ function wait_for_script_load(look_for, callback) {
 
 (function(){
   importCSS('https://selectorgadget.herokuapp.com/css/selectorgadget.css');
-  importJS('https://selectorgadget.herokuapp.com/vendor/jquery.min.js', 'jQuery', function() { // Load everything else when it is done.
+  importJS('https://selectorgadget.herokuapp.com/js/vendor/jquery.min.js', 'jQuery', function() { // Load everything else when it is done.
     jQuery.noConflict();
-    importJS('https://selectorgadget.herokuapp.com/vendor/diff_match_patch.js', 'diff_match_patch', function() {
+    importJS('https://selectorgadget.herokuapp.com/js/vendor/diff_match_patch.js', 'diff_match_patch', function() {
       importJS('https://selectorgadget.herokuapp.com/js/dom.js', 'DomPredictionHelper', function() {
         importJS('https://selectorgadget.herokuapp.com/js/interface.js');
       });
